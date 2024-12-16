@@ -16,7 +16,7 @@ public class EntryController {
         entries = new ArrayList<>();
         entries.add(new Entry(1, "Marti", "QWERTYUIOP", "03-12-2024", 6));
         entries.add(new Entry(2, "John", "Hello World", "10-12-2024", 10));
-        entries.add(new Entry(3, "Alice", "Spring Boot is awesome!", "15-12-2024", 20));
+        entries.add(new Entry(3, "Alice", "Sialalalalala", "15-12-2024", 20));
     }
 
     @GetMapping("/entry")
