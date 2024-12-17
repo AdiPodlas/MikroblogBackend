@@ -33,16 +33,10 @@ public class EntryController {
     public List<Entry> searchEntries(@RequestParam String q) {
         if (q.equalsIgnoreCase("coś tam")) {
             return new ArrayList<>(); // zwraca pustą listę
+        }else {
+            return entries;
         }
 
-        // filtruje listę wpisów na podstawie parametrów, np. tekstu lub autora
-        List<Entry> filteredEntries = new ArrayList<>();
-        for (Entry entry : entries) {
-            if (entry.getText().toLowerCase().contains(q.toLowerCase()) ||
-                    entry.getAuthor().toLowerCase().contains(q.toLowerCase())) {
-                filteredEntries.add(entry);
-            }
-        }
-        return filteredEntries;
-    }
+
+}
 }
